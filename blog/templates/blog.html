@@ -1,22 +1,4 @@
-﻿<!--<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title></title>
-</head>
-<body>
-    <h1>这是我的博客页面</h1>
-    {% for blog in blogs.all %}
-    {{blog.title}}<br />
-    {{blog.date}}<br />
-    <img src="{{ blog.imag.url }}" alt="Alternate Text" height="600"/><br />
-    {{blog.text}}<br />
-    {% endfor %}
-</body>
-</html>-->
-
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -117,7 +99,7 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 {% for blog in blogs.all %}
-                <h2><a href="#">{{blog.title}}</a></h2><br /><br />
+                <h2><a href="{{blog.id}}">{{blog.title}}</a></h2><br /><br />
                 {{blog.date}}<br /><br />
                 <img src="{{ blog.imag.url }}" alt="Alternate Text" height="300" /><br /><br />
                 <pre style="width:1500px;">{{blog.short_text}}</pre><br /><br />
