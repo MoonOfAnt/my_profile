@@ -1,5 +1,6 @@
 ﻿<!doctype html>
 <html lang="en">
+{% load static %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -81,11 +82,12 @@
 
         <section class="jumbotron text-center">
             <div class="container">
-                <h1>Album example</h1>
-                <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+                <h1>我的主页</h1><br />
+                <img src="{% static "shazhao.jpg" %}" alt="照片丢了..." width="300"/>
+                <p class="lead text-muted">这是我的主页，啦啦啦啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿？？？？？？？？？？？？？？？？？？？？？？？？？</p>
                 <p>
-                    <a href="blog" class="btn btn-primary my-2">我的博客</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                    <a href="{% static 'my_resume.pdf' %}" class="btn btn-primary my-2">我的简历</a>
+                    <a href="blog" class="btn btn-secondary my-2">我的博客</a>
                 </p>
             </div>
         </section>
